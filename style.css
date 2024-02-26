@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+.container{
+    /* background-color: rgb(6, 193, 255); */
+    background: linear-gradient( rgb(189, 38, 38), black);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: white;
+    height: 70vh;
+    width: 320px;
+    overflow: hidden;
+}
+
+.full-screen{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.stories{
+    padding: 1rem;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.story{
+    height: 5rem;
+    width: 5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid rgb(174, 0, 0);
+    overflow: hidden;
+    display: inline-block;
+    padding: 2px;
+}
+
+.stories-box{
+    display: inline-block;
+}
+
+.story img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    margin-block: 20px;
+    color: white;
+}
+
+.username{
+    color: black;
+    text-align: center;  
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.dev{
+
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    font-size: 0.7rem;
+    font-weight: 500;
+
+}
